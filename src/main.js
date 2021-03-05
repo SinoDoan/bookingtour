@@ -5,7 +5,7 @@ import AppLayout from './layout/index.vue'
 import router from './router'
 import store from './store'
 import setGlobalHelpers from './global.helpers'
-
+ 
 import './mixins'
 import './plugins'
 import './assets/css/app.scss'
@@ -40,3 +40,5 @@ new Vue({
 }).$mount('#app')
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
+
+ 

@@ -2,7 +2,7 @@
   <div >
     <v-carousel 
       cycle
-      height="600"
+      height="500"
       hide-delimiter-background
       :show-arrows="false"
     >
@@ -10,8 +10,8 @@
         v-for="(item,i) in items"
             :key="i"
             :src="item.src"
-        reverse-transition="transition"                                                                                         
-        transition="transition"
+        reverse-transition="fade-transition"                                                                                         
+        transition="fade-transition"
       >
       </v-carousel-item>
     </v-carousel>
@@ -34,7 +34,7 @@
           <a href="https://bit.ly/sporta-capkeo-android"><img style="width: 170px" src="https://www.sporta.vn/assets/icon-googleplaystore-18c9b8d2140c5ad8657c670f05036c5a62760da182f1d8cbe8c40c467c7f2b4b.svg" /></a>
         </div>
         <div class="search-bar mt-4 p-3 p-lg-1 pl-lg-4">
-          <form id="main-search-form" action="/dat-san-online">
+          <form id="main-search-form">
             <input type="hidden" name="city_id" value="50">
             <input type="hidden" name="input_type" value="string">
             <div class="row">
@@ -59,7 +59,6 @@
     </div>
   </div>
   </div>
-
 <div class="bg-light">
   <div class="container">
     <div class="text-center pb-lg-4">
@@ -103,9 +102,281 @@
   </div>
 </div>
 
-
-
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row mb-3">
+      <div class="col-md-8">
+        <p class="subtitle text-primary">Địa điểm hàng đầu</p>
+        <h4>Hơn 703 sân bóng trên toàn quốc</h4>
+      </div>
+      <div class="col-md-4 d-lg-flex align-items-center justify-content-end"><a href="/san/tim" class="text-muted text-sm">
+          Xem tất cả sân bóng<i class="fas fa-angle-double-right ml-2"></i></a></div>
     </div>
+    <div class="row">
+      <div class="swiper-container guides-slider">
+        <!-- Additional required wrapper-->
+        <div class="swiper-wrapper">
+          <!-- Slides-->
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/quan-2" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_0_thumb-62159cc1ec2f646c7dd403aa891ce4ea9ca079582b1d686455e63c66addbca85.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Quận 2</h6>
+                  <p class="card-text text-sm">7 sân bóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/quan-1" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_0_thumb-62159cc1ec2f646c7dd403aa891ce4ea9ca079582b1d686455e63c66addbca85.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Quận 1</h6>
+                  <p class="card-text text-sm">2 sân bóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/quan-12" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_1_thumb-c273212be85e396928e29af266311e55836cfd866375c119fed832a87327d7e3.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Quận 12</h6>
+                  <p class="card-text text-sm">24 sân bóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/quan-thu-duc" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_2_thumb-37ab11320636d5a596ea053938bc418fbb15b7e0797a1d72d51fbe1e770ba7ba.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Quận Thủ Đức</h6>
+                  <p class="card-text text-sm">37 sân bóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/quan-9" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_0_thumb-62159cc1ec2f646c7dd403aa891ce4ea9ca079582b1d686455e63c66addbca85.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Quận 9</h6>
+                  <p class="card-text text-sm">26 sân bóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/quan-go-vap" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_1_thumb-c273212be85e396928e29af266311e55836cfd866375c119fed832a87327d7e3.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Quận Gò Vấp</h6>
+                  <p class="card-text text-sm">18 sân bóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/quan-binh-thanh" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_2_thumb-37ab11320636d5a596ea053938bc418fbb15b7e0797a1d72d51fbe1e770ba7ba.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Quận Bình Thạnh</h6>
+                  <p class="card-text text-sm">18 sân bóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/quan-tan-binh" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_0_thumb-62159cc1ec2f646c7dd403aa891ce4ea9ca079582b1d686455e63c66addbca85.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Quận Tân Bình</h6>
+                  <p class="card-text text-sm">21 sân bóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/quan-tan-phu" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_1_thumb-c273212be85e396928e29af266311e55836cfd866375c119fed832a87327d7e3.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Quận Tân Phú</h6>
+                  <p class="card-text text-sm">16 sân bóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/quan-phu-nhuan" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_2_thumb-37ab11320636d5a596ea053938bc418fbb15b7e0797a1d72d51fbe1e770ba7ba.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Quận Phú Nhuận</h6>
+                  <p class="card-text text-sm">6 sân bóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/quan-3" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_1_thumb-c273212be85e396928e29af266311e55836cfd866375c119fed832a87327d7e3.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Quận 3</h6>
+                  <p class="card-text text-sm">1 sân bóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/quan-10" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_2_thumb-37ab11320636d5a596ea053938bc418fbb15b7e0797a1d72d51fbe1e770ba7ba.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Quận 10</h6>
+                  <p class="card-text text-sm">8 sân bóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/quan-11" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_0_thumb-62159cc1ec2f646c7dd403aa891ce4ea9ca079582b1d686455e63c66addbca85.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Quận 11</h6>
+                  <p class="card-text text-sm">10 sân bóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/quan-4" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_1_thumb-c273212be85e396928e29af266311e55836cfd866375c119fed832a87327d7e3.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Quận 4</h6>
+                  <p class="card-text text-sm">0 sân bóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/quan-5" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_2_thumb-37ab11320636d5a596ea053938bc418fbb15b7e0797a1d72d51fbe1e770ba7ba.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Quận 5</h6>
+                  <p class="card-text text-sm">3 sân bóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/quan-6" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_0_thumb-62159cc1ec2f646c7dd403aa891ce4ea9ca079582b1d686455e63c66addbca85.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Quận 6</h6>
+                  <p class="card-text text-sm">7 sân bóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/quan-8" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_1_thumb-c273212be85e396928e29af266311e55836cfd866375c119fed832a87327d7e3.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Quận 8</h6>
+                  <p class="card-text text-sm">7 sân bóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/quan-binh-tan" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_2_thumb-37ab11320636d5a596ea053938bc418fbb15b7e0797a1d72d51fbe1e770ba7ba.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Quận Bình Tân</h6>
+                  <p class="card-text text-sm">16 sân bóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/quan-7" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_0_thumb-62159cc1ec2f646c7dd403aa891ce4ea9ca079582b1d686455e63c66addbca85.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Quận 7</h6>
+                  <p class="card-text text-sm">13 sân bóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/huyen-cu-chi" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_1_thumb-c273212be85e396928e29af266311e55836cfd866375c119fed832a87327d7e3.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Huyện Củ Chi</h6>
+                  <p class="card-text text-sm">6 sân bóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/huyen-hoc-mon" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_2_thumb-37ab11320636d5a596ea053938bc418fbb15b7e0797a1d72d51fbe1e770ba7ba.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Huyện Hóc Môn</h6>
+                  <p class="card-text text-sm">10 sân bóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/huyen-binh-chanh" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_0_thumb-62159cc1ec2f646c7dd403aa891ce4ea9ca079582b1d686455e63c66addbca85.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Huyện Bình Chánh</h6>
+                  <p class="card-text text-sm">17 sân bóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/huyen-nha-be" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_1_thumb-c273212be85e396928e29af266311e55836cfd866375c119fed832a87327d7e3.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Huyện Nhà Bè</h6>
+                  <p class="card-text text-sm">5 sân bóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay mb-lg-0">
+                <a href="/san-bong/tp-ho-chi-minh/huyen-can-gio" class="tile-link"></a>
+                <img src='https://www.sporta.vn/assets/default_venue_2_thumb-37ab11320636d5a596ea053938bc418fbb15b7e0797a1d72d51fbe1e770ba7ba.jpg' alt="san bong" class="bg-image" />
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Huyện Cần Giờ</h6>
+                  <p class="card-text text-sm">2 sân bóng</p>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  </div>
+</section>
+<section class="py-6 position-relative dark-overlay">
+  <img alt="" class="bg-image" src="https://www.sporta.vn/assets/handshake-ab7c15c813a3b0c5d04bce44da3f7601ea9a7fbdbdd54496b3fb0c6088539d53.jpg" />
+  <div class="container">
+    <div class="overlay-content text-white py-lg-5">
+      <h3 class="display-3 font-weight-bold text-serif text-shadow mb-4 orange-text">Hợp tác với sporta</h3>
+      <h5>Bạn là chủ sân? Bạn lo lắng khi sân còn trống? Sporta hỗ trợ bạn lấp đầy lịch đặt sân với chi phí thấp nhất!</h5>
+      <a href="/quan-ly-san-bong" class="btn btn-secondary">Tìm hiểu ngay</a>
+    </div>
+  </div>
+</section>
+
+
+</div>
+
 </template>
 
 <script>
@@ -114,7 +385,7 @@ export default {
   name: 'IndexPage',
 
   components: {
-    TourList
+    TourList,
   },
 
   data () {
@@ -123,7 +394,8 @@ export default {
        {src: require('../assets/img/img1.jpg')},
        {src: require('../assets/img/img2.jpg')},
       ],
-      text: ''
+      text: '',
+      
     }
   },
 
@@ -135,6 +407,7 @@ export default {
     async init () {
 
     }
+     
   }
 }
 </script>
